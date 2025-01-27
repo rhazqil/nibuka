@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0a0a;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-section {
+    text-align: center;
+    z-index: 1;
+}
+
+.title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: slideIn 2s ease-out;
+}
+
+.description {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 3s ease-out;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #ff66b2;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    animation: bounce 1.5s infinite;
+}
+
+.cta-button:hover {
+    background-color: #ff3366;
+    transform: scale(1.1);
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #90ee90, #00bfff);
+    animation: gradientShift 10s linear infinite;
+    z-index: 0;
+}
+
+@keyframes gradientShift {
+    0% {
+        background: linear-gradient(45deg, #90ee90, #00bfff);
+    }
+    50% {
+        background: linear-gradient(45deg, #00bfff, #90ee90);
+    }
+    100% {
+        background: linear-gradient(45deg, #90ee90, #00bfff);
+    }
+}
