@@ -83,21 +83,21 @@ html {
     font-size: 16px; /* Ukuran font dasar untuk halaman */
 }
 h1 {
-    font-size: 3rem;  /* Ukuran font 1x dari ukuran font root */
+    font-size: 2rem;  /* Ukuran font 1x dari ukuran font root */
     text-align: center;  /* Menyelaraskan teks di tengah */
 }
 
 /* Untuk layar kecil (ponsel) */
 @media screen and (max-width: 600px) {
     h1 {
-        font-size: 1rem;  /* Ukuran font lebih kecil pada layar kecil */
+        font-size: 0.975rem;  /* Ukuran font lebih kecil pada layar kecil */
     }
 }
 
 /* Untuk layar besar (desktop) */
 @media screen and (min-width: 601px) {
     h1 {
-        font-size: 3rem;  /* Ukuran font lebih besar pada layar besar */
+        font-size: 2rem;  /* Ukuran font lebih besar pada layar besar */
     }
 }
 
