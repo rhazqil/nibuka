@@ -78,6 +78,46 @@ p {
         opacity: 1;
     }
 }
+html {
+    font-size: 16px; /* Ukuran font dasar untuk halaman */
+}
+h1 {
+    font-size: 3rem;  /* Ukuran font default untuk layar besar (desktop) */
+    text-align: center;  /* Menyelaraskan teks di tengah */
+}
+
+/* Jika lebar layar perangkat kurang dari 600px (ponsel) */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;  /* Ukuran font lebih kecil untuk ponsel */
+    }
+}
+
+/* Jika lebar layar perangkat lebih besar dari 600px (tablet atau desktop) */
+@media screen and (min-width: 601px) {
+    h1 {
+        font-size: 3rem;  /* Ukuran font lebih besar untuk layar besar */
+    }
+}
+
+p {
+    font-size: 1rem;  /* Ukuran font 1x dari ukuran font root */
+    text-align: center;  /* Menyelaraskan teks di tengah */
+}
+
+/* Untuk layar kecil (ponsel) */
+@media screen and (max-width: 600px) {
+    p {
+        font-size: 0.875rem;  /* Ukuran font lebih kecil pada layar kecil */
+    }
+}
+
+/* Untuk layar besar (desktop) */
+@media screen and (min-width: 601px) {
+    p {
+        font-size: 1.125rem;  /* Ukuran font lebih besar pada layar besar */
+    }
+}
 
 /* Gaya khusus untuk layar dengan lebar maksimal 600px (misalnya ponsel) */
 @media screen and (max-width: 600px) {
