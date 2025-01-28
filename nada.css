@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    overflow-x: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(45deg, #ff66b2, #ff3366);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero {
+    animation: fadeIn 2s ease-out;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    animation: slideIn 2s ease-out;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-out;
+}
+
+.start-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    color: #ff3366;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: #ff3366;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Animasi Scroll */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+html {
+    font-size: 16px; /* Ukuran font dasar untuk halaman */
+}
+h1 {
+    font-size: 3vh;
+}
+
+/* Untuk layar kecil */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1rem;
+    }
+}
+
+/* Untuk layar besar */
+@media screen and (min-width: 601px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+p {
+    font-size: 1rem;  /* Ukuran font 1x dari ukuran font root */
+}
+
+/* Untuk layar kecil (ponsel) */
+@media screen and (max-width: 600px) {
+    p {
+        font-size: 0.875rem;  /* Ukuran font lebih kecil pada layar kecil */
+        
+    }
+}
+
+/* Untuk layar besar (desktop) */
+@media screen and (min-width: 601px) {
+    p {
+        font-size: 1.125rem;  /* Ukuran font lebih besar pada layar besar */
+    }
+}
+
+
+.content {
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: -20px;
+    animation: fadeIn 2s ease-out;
+}
+
+h2, h3 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+a {
+    color: #ff3366;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;  /* Gambar akan mengambil lebar maksimal 100% dari elemen induknya */
+    height: auto;     /* Menjaga rasio aspek gambar agar tetap proporsional */
+}
+
+
+.cta-btn {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    background-color: #ff3366;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ff66b2;
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ff3366;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

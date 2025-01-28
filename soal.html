@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Elemen HTML</title>
+    <link rel="stylesheet" href="soal.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz: Elemen HTML</h1>
+        <form id="quizForm">
+            <div class="question">
+                <h3>1. Apa fungsi tag &lt;h1&gt; hingga &lt;h6&gt;?</h3>
+                <input type="radio" name="q1" value="A"> A. Menampilkan gambar<br>
+                <input type="radio" name="q1" value="B"> B. Membuat daftar<br>
+                <input type="radio" name="q1" value="C"> C. Membuat judul dengan tingkat kepentingan berbeda<br>
+                <input type="radio" name="q1" value="D"> D. Menampilkan video<br>
+            </div>
+
+            <div class="question">
+                <h3>2. Apa fungsi tag &lt;img&gt;?</h3>
+                <input type="radio" name="q2" value="A"> A. Membuat hyperlink<br>
+                <input type="radio" name="q2" value="B"> B. Menampilkan gambar<br>
+                <input type="radio" name="q2" value="C"> C. Membuat daftar<br>
+                <input type="radio" name="q2" value="D"> D. Menampilkan tabel<br>
+            </div>
+
+            <div class="question">
+                <h3>3. Apa fungsi tag &lt;a&gt;?</h3>
+                <input type="radio" name="q3" value="A"> A. Menampilkan gambar<br>
+                <input type="radio" name="q3" value="B"> B. Membuat hyperlink<br>
+                <input type="radio" name="q3" value="C"> C. Membuat paragraf<br>
+                <input type="radio" name="q3" value="D"> D. Membuat daftar<br>
+            </div>
+
+            <div class="question">
+                <h3>4. Apa fungsi tag &lt;p&gt;?</h3>
+                <input type="radio" name="q4" value="A"> A. Membuat paragraf<br>
+                <input type="radio" name="q4" value="B"> B. Membuat gambar<br>
+                <input type="radio" name="q4" value="C"> C. Membuat hyperlink<br>
+                <input type="radio" name="q4" value="D"> D. Membuat tabel<br>
+            </div>
+
+            <div class="question">
+                <h3>5. Apa fungsi tag &lt;ul&gt;?</h3>
+                <input type="radio" name="q5" value="A"> A. Membuat tabel<br>
+                <input type="radio" name="q5" value="B"> B. Membuat daftar tidak berurutan<br>
+                <input type="radio" name="q5" value="C"> C. Membuat gambar<br>
+                <input type="radio" name="q5" value="D"> D. Membuat paragraf<br>
+            </div>
+
+            <div class="question">
+                <h3>6. Apa fungsi tag &lt;ol&gt;?</h3>
+                <input type="radio" name="q6" value="A"> A. Membuat tabel<br>
+                <input type="radio" name="q6" value="B"> B. Membuat daftar berurutan<br>
+                <input type="radio" name="q6" value="C"> C. Membuat gambar<br>
+                <input type="radio" name="q6" value="D"> D. Membuat paragraf<br>
+            </div>
+
+            <div class="question">
+                <h3>7. Apa fungsi tag &lt;table&gt;?</h3>
+                <input type="radio" name="q7" value="A"> A. Membuat paragraf<br>
+                <input type="radio" name="q7" value="B"> B. Membuat daftar<br>
+                <input type="radio" name="q7" value="C"> C. Membuat tabel<br>
+                <input type="radio" name="q7" value="D"> D. Membuat gambar<br>
+            </div>
+
+            <div class="question">
+                <h3>8. Apa fungsi tag &lt;br&gt;?</h3>
+                <input type="radio" name="q8" value="A"> A. Membuat tabel<br>
+                <input type="radio" name="q8" value="B"> B. Membuat baris baru<br>
+                <input type="radio" name="q8" value="C"> C. Membuat daftar<br>
+                <input type="radio" name="q8" value="D"> D. Membuat gambar<br>
+            </div>
+
+            <div class="question">
+                <h3>9. Apa fungsi tag &lt;hr&gt;?</h3>
+                <input type="radio" name="q9" value="A"> A. Membuat garis horizontal<br>
+                <input type="radio" name="q9" value="B"> B. Membuat daftar<br>
+                <input type="radio" name="q9" value="C"> C. Membuat gambar<br>
+                <input type="radio" name="q9" value="D"> D. Membuat tabel<br>
+            </div>
+
+            <div class="question">
+                <h3>10. Apa fungsi tag &lt;div&gt;?</h3>
+                <input type="radio" name="q10" value="A"> A. Membuat tabel<br>
+                <input type="radio" name="q10" value="B"> B. Membuat kontainer untuk elemen lain<br>
+                <input type="radio" name="q10" value="C"> C. Membuat paragraf<br>
+                <input type="radio" name="q10" value="D"> D. Membuat gambar<br>
+            </div>
+
+            <button type="button" onclick="checkAnswers()">Cek Jawaban</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <div id="result" class="result">
+        <button id="nextButton" style="display: none;" onclick="nextStep()">Lanjut</button>
+        <button id="backButton" style="display: none;" onclick="goBackToQuestions()">Kembali</button>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
